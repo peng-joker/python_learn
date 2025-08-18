@@ -15,7 +15,7 @@ def selectFile():
         for file in files:
             info = file.split('.')
             if info[len(info)-1]=="wav":
-                trans_flac_to_other(os.path.join(root, file),"mp3")
+                trans_wav_to_other(os.path.join(root, file),"mp3")
 
 def fileName(filepath):
     li = os.path.split(filepath)

@@ -1,0 +1,47 @@
+/* 知识库管理系统自定义样式 */
+
+.dashboard-title {
+    font-size: 24px;
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+.sync-button {
+    background-color: #4285f4;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sync-button:hover {
+    background-color: #1a73e8;
+}
+
+.tag-display {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #e8f0fe;
+    color: #1967d2;
+    border-radius: 16px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.success-status {
+    color: #0f9d58;
+    font-weight: bold;
+}
+
+.failed-status {
+    color: #d93025;
+    font-weight: bold;
+}
+
+.pending-status {
+    color: #f29900;
+    font-weight: bold;
+} 

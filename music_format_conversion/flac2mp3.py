@@ -20,7 +20,7 @@ def selectFile():
 
 def fileName(filepath):
     li = os.path.split(filepath)
-    return li[len(li)-1].split('.')[0]
+    return li[len(li)-1].split(".flac")[0]
 
 if __name__ == '__main__':
     selectFile()

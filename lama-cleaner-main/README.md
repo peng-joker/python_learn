@@ -62,3 +62,6 @@ great online services [here](https://cleanup.pictures/).
 - Install dependencies:`cd lama_cleaner/app/ && pnpm install`
 - Start development server: `pnpm start`
 - Build: `pnpm build`
+
+### 说明
+本地去水印神器
