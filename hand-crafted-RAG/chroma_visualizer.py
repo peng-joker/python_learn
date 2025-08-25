@@ -2,7 +2,6 @@ import chromadb
 import umap
 import plotly.express as px
 import pandas as pd
-import numpy as np
 
 # 连接到Chroma数据库
 client = chromadb.PersistentClient(path="./chromaDbXiYouJi")  # 替换为您的数据库路径
