@@ -1,6 +1,6 @@
 # chunk.py
 def read_data() -> str:
-    with open("data.md", "r", encoding="utf-8") as f:
+    with open("西游记小说.txt", "r", encoding="utf-8") as f:
         return f.read()
 
 # 分块函数

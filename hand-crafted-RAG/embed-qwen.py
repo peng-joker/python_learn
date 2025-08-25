@@ -2,8 +2,8 @@ from openai import OpenAI
 import chunkLangChain
 import chromadb
 
-chromadb_client = chromadb.PersistentClient("./chromaDb")
-chromadb_collection = chromadb_client.get_or_create_collection("joker")
+chromadb_client = chromadb.PersistentClient("./chromaDbXiYouJi")
+chromadb_collection = chromadb_client.get_or_create_collection("xiyouji")
 
 def embed(text: str) -> list[float]:
     client = OpenAI(
@@ -65,13 +65,13 @@ def llm_query(content:str):
 
 if __name__ == '__main__':
     # create_db() # 只需要处理一次
-    question = "令狐冲领悟了什么魔法？"
+    question = "孙悟空的金箍棒是从哪里得来的？"
     chunks = query_db(question)
     prompt = "Please answer user's question according to context\n"
     prompt += f"Question: {question}\n"
     prompt += "Context:\n"
     for c in chunks:
         prompt += f"{c}\n"
-    print(prompt)
+    # print(prompt)
     # 将向量数据库中找到的片段统一丢给LLM；之后统一返回前端
     print(llm_query(prompt))

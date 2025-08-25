@@ -5,14 +5,14 @@ import pandas as pd
 import numpy as np
 
 # 连接到Chroma数据库
-client = chromadb.PersistentClient(path="./chromaDb")  # 替换为您的数据库路径
+client = chromadb.PersistentClient(path="./chromaDbXiYouJi")  # 替换为您的数据库路径
 
 # 获取集合列表
 collections = client.list_collections()
 print("可用集合:", [col.name for col in collections])
 
 # 选择要可视化的集合
-collection_name = "joker"  # 替换为您的集合名称
+collection_name = "xiyouji"  # 替换为您的集合名称
 collection = client.get_collection(collection_name)
 
 # 获取所有向量和对应的元数据

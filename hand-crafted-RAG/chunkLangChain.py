@@ -1,6 +1,6 @@
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 def read_data() -> str:
-    with open("data.md", "r", encoding="utf-8") as f:
+    with open("西游记小说.txt", "r", encoding="utf-8") as f:
         return f.read()
 def get_chunks() -> list[str]:
     # 1️⃣ 定义示例文本（可替换为你自己的内容）
